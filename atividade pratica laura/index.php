@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $senha = $_POST["senha"];
 
-    // Login fixo (simples)
+   
     if ($email == "teste@email.com" && $senha == "123456") {
         $_SESSION["usuario"] = "Yuri";
         header("Location: feed.php");
